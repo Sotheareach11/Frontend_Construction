@@ -49,13 +49,15 @@
         placeholder="Enter Password"
       />
 
-      <BSDButton />
-
       <section class="grid gap-1.5">
-        <p class="bg-[#11A79F] text-lg font-bold text-center">Register</p>
-        <span class="text-[#7C7C7C] underline text-base text-center">
-          Back
-        </span>
+        <BSDButton :text="'Register'" @click="handleSubmitRegister" />
+
+        <NuxtLink
+          to="/login"
+          class="text-[#7C7C7C] underline text-base text-center hover:text-[#11A79F]"
+        >
+          Login
+        </NuxtLink>
       </section>
     </section>
   </div>
@@ -71,9 +73,22 @@ const state = ref({
   conpassword: "",
 });
 
-function handleSubmit() {
+function handleSubmitRegister() {
   console.log("Form submitted:", state.value);
+  navigateTo("/login/");
 }
+
+// Meta tags for Register Page
+useHead({
+  title: "Register - Bak Sey Slab Daek",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Create your account with Bak Sey Slab Daek and get started with premium construction materials at your fingertips.",
+    },
+  ],
+});
 </script>
 
 <style lang="scss"></style>

@@ -2,7 +2,7 @@
   <footer class="p-4 text-center">
     <div class="flex justify-around flex-wrap mb-4">
       <div>
-        <h3 class="font-bold">Bak Sey Slab Daek</h3>
+        <h3 class="font-bold text-[#11A79F]">Bak Sey Slab Daek</h3>
         <p>
           400 University Drive<br />Suite 200 Coral<br />Gables, FL 33134 USA
         </p>

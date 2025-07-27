@@ -21,7 +21,7 @@
         {{ product.name }}
       </h3>
       <p
-        class="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300"
+        class="text-gray-400 font-bold text-sm group-hover:text-gray-300 transition-colors duration-300"
       >
         $ {{ product.price }}
         <span class="line-through text-gray-500 group-hover:text-gray-400">{{
@@ -35,6 +35,7 @@
       class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#0000007b]"
     >
       <button
+        @click="$emit('addToCart', product)"
         class="cursor-pointer bg-teal-500 hover:bg-teal-600 text-white py-2 px-6 rounded-full shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-300"
       >
         Add to Cart
@@ -44,6 +45,7 @@
         class="flex justify-center mt-4 gap-4 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 delay-100"
       >
         <button
+          @click="$emit('viewDetail', product)"
           class="cursor-pointer text-gray-300 hover:text-teal-400 transition-colors duration-300 size-[35px] rounded-full hover:bg-white hover:bg-opacity-10"
         >
           <i class="fas fa-share"></i>
@@ -60,4 +62,5 @@
 
 <script setup>
 defineProps(["product"]);
+defineEmits(["addToCart", "viewDetail"]);
 </script>

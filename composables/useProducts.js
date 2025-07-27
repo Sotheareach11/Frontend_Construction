@@ -2,75 +2,153 @@ export const useProducts = () => {
     return [
         {
             id: 1,
-            name: 'Steel Rebar 1',
-            price: 105,
-            imageUrl: 'https://m.media-amazon.com/images/I/61nlYFCSOkL._UF1000,1000_QL80_.jpg'
+            name: 'Heavy Duty Steel Rebar',
+            price: 120,
+            rating: 4.7,
+            reviews: 45,
+            shortDescription: 'High-strength steel rebar for robust construction projects.',
+            longDescription: 'Designed for maximum durability, this steel rebar ensures structural integrity in concrete frameworks.',
+            sizes: ['12mm', '16mm', '20mm'],
+            sku: 'RB001-HD',
+            category: 'Rebar',
+            tags: ['Steel', 'Construction', 'Durable', 'Structural'],
+            imageUrl: 'https://images.pexels.com/photos/10309275/pexels-photo-10309275.jpeg?auto=compress&cs=tinysrgb&w=380&h=214&fit=crop',
+            stock: 50
         },
         {
             id: 2,
-            name: 'Steel Rebar 2',
-            price: 105,
-            imageUrl: 'https://cdn1.npcdn.net/images/3efffd9c9ca3b0e90402ab8ba38749f7_1687414066.jpeg?md5id=be3811292c9b557753b303d5d194cf60&new_width=1000&new_height=1000&w=-62170008925'
+            name: 'Concrete Mixer 500L',
+            price: 850,
+            rating: 4.8,
+            reviews: 28,
+            shortDescription: 'Portable 500L concrete mixer for efficient mixing.',
+            longDescription: 'Ideal for small to medium construction sites, this mixer ensures consistent concrete quality.',
+            sizes: ['500L'],
+            sku: 'CM001-500',
+            category: 'Equipment',
+            tags: ['Concrete', 'Mixer', 'Construction', 'Portable'],
+            imageUrl: '',
+            stock: 10
         },
         {
             id: 3,
-            name: 'Steel Rebar 3',
-            price: 105,
-            imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_c_bCPyXxYdixgNw1nqsBUC2nXOZdn0WqKw&s'
+            name: 'Galvanized Steel Scaffolding',
+            price: 200,
+            rating: 4.6,
+            reviews: 39,
+            shortDescription: 'Sturdy scaffolding for safe construction work.',
+            longDescription: 'Corrosion-resistant galvanized steel scaffolding for secure and reliable site access.',
+            sizes: ['2m', '3m', '4m'],
+            sku: 'SC001-GS',
+            category: 'Scaffolding',
+            tags: ['Scaffolding', 'Steel', 'Safety', 'Construction'],
+            imageUrl: 'https://images.pexels.com/photos/10416837/pexels-photo-10416837.jpeg?auto=compress&cs=tinysrgb&w=380&h=214&fit=crop',
+            stock: 30
         },
         {
             id: 4,
-            name: 'Steel Rebar 4',
-            price: 105,
-            imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJsrStjPRauziYUo_gnqBGlWTcQtbrYzWBXg&s'
+            name: 'Construction Safety Helmet',
+            price: 25,
+            rating: 4.9,
+            reviews: 60,
+            shortDescription: 'High-impact safety helmet for construction workers.',
+            longDescription: 'Protects against falling objects with a comfortable fit for all-day use.',
+            sizes: ['M', 'L'],
+            sku: 'SH001-HI',
+            category: 'Safety Gear',
+            tags: ['Safety', 'Helmet', 'Construction', 'Protective'],
+            imageUrl: 'https://images.pexels.com/photos/21301673/pexels-photo-21301673.jpeg?auto=compress&cs=tinysrgb&w=380&h=214&fit=crop',
+            stock: 100
         },
         {
             id: 5,
-            name: 'Steel Rebar 5',
-            price: 105,
-            imageUrl: 'https://mobileimages.lowes.com/productimages/4d55aa9a-b645-48ec-9a9e-7e6480283eea/02592174.jpg'
+            name: 'Reinforced Concrete Blocks',
+            price: 15,
+            rating: 4.4,
+            reviews: 25,
+            shortDescription: 'Pre-cast concrete blocks for quick construction.',
+            longDescription: 'High-quality reinforced blocks for walls and foundations, ensuring strength and stability.',
+            sizes: ['20x20x40cm', '15x20x40cm'],
+            sku: 'CB001-RC',
+            category: 'Building Materials',
+            tags: ['Concrete', 'Blocks', 'Construction', 'Foundation'],
+            imageUrl: 'https://images.pexels.com/photos/17219264/pexels-photo-17219264.jpeg?auto=compress&cs=tinysrgb&w=380&h=214&fit=crop',
+            stock: 200
         },
         {
             id: 6,
-            name: 'Steel Rebar 6',
-            price: 105,
-            imageUrl: 'https://images.thdstatic.com/productImages/555e8655-980e-4dcb-b6f1-1da19594cb78/svn/bricks-20050276-64_600.jpg'
+            name: 'Steel I-Beam',
+            price: 300,
+            rating: 4.8,
+            reviews: 35,
+            shortDescription: 'Heavy-duty steel I-beam for structural support.',
+            longDescription: 'Engineered for high-load applications, perfect for large-scale construction projects.',
+            sizes: ['3m', '6m', '9m'],
+            sku: 'IB001-HD',
+            category: 'Structural Steel',
+            tags: ['Steel', 'I-Beam', 'Construction', 'Support'],
+            imageUrl: 'https://images.pexels.com/photos/10416836/pexels-photo-10416836.jpeg?auto=compress&cs=tinysrgb&w=380&h=214&fit=crop',
+            stock: 25
         },
         {
             id: 7,
-            name: 'Steel Rebar 7',
-            price: 105,
-            imageUrl: 'https://www.hafele.com/INTERSHOP/static/WFS/Haefele-HAC-Site/-/Haefele-HAC/en_US/opentext/assets/hac/Chipboard_Screws_Teaser_880x880px.png'
+            name: 'Portable Welding Machine',
+            price: 450,
+            rating: 4.7,
+            reviews: 42,
+            shortDescription: 'Compact welding machine for on-site fabrication.',
+            longDescription: 'Versatile and portable, ideal for welding steel components on construction sites.',
+            sizes: ['One Size'],
+            sku: 'WM001-P',
+            category: 'Tools',
+            tags: ['Welding', 'Portable', 'Construction', 'Steel'],
+            imageUrl: 'https://images.pexels.com/photos/159154/pexels-photo-159154.jpeg?auto=compress&cs=tinysrgb&w=380&h=214&fit=crop',
+            stock: 15
         },
         {
             id: 8,
-            name: 'Steel Rebar 8',
-            price: 105,
-            imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiYmdFL4ANIvtCULjjxA10BfiZ4ltyyuyYWw&s'
+            name: 'Construction Grade Plywood',
+            price: 40,
+            rating: 4.5,
+            reviews: 30,
+            shortDescription: 'Durable plywood for formwork and construction.',
+            longDescription: 'High-strength plywood designed for concrete formwork and structural applications.',
+            sizes: ['4x8ft', '3x6ft'],
+            sku: 'PL001-CG',
+            category: 'Building Materials',
+            tags: ['Plywood', 'Construction', 'Formwork', 'Durable'],
+            imageUrl: 'https://images.pexels.com/photos/162808/pexels-photo-162808.jpeg?auto=compress&cs=tinysrgb&w=380&h=214&fit=crop',
+            stock: 80
         },
         {
             id: 9,
-            name: 'Steel Rebar 9',
-            price: 105,
-            imageUrl: 'https://via.placeholder.com/300x200?text=Product+Image'
+            name: 'High-Performance Concrete Pump',
+            price: 1200,
+            rating: 4.9,
+            reviews: 20,
+            shortDescription: 'Efficient concrete pump for large projects.',
+            longDescription: 'Delivers high-volume concrete placement with precision and speed for major construction sites.',
+            sizes: ['One Size'],
+            sku: 'CP001-HP',
+            category: 'Equipment',
+            tags: ['Concrete', 'Pump', 'Construction', 'Heavy Duty'],
+            imageUrl: 'https://images.pexels.com/photos/10416835/pexels-photo-10416835.jpeg?auto=compress&cs=tinysrgb&w=380&h=214&fit=crop',
+            stock: 5
         },
         {
             id: 10,
-            name: 'Steel Rebar 10',
-            price: 105,
-            imageUrl: 'https://via.placeholder.com/300x200?text=Product+Image'
+            name: 'Steel Reinforcement Mesh',
+            price: 80,
+            rating: 4.6,
+            reviews: 38,
+            shortDescription: 'Welded steel mesh for concrete reinforcement.',
+            longDescription: 'Provides excellent tensile strength for slabs, walls, and foundations in construction.',
+            sizes: ['2x4m', '3x6m'],
+            sku: 'RM001-SM',
+            category: 'Rebar',
+            tags: ['Steel', 'Mesh', 'Construction', 'Reinforcement'],
+            imageUrl: 'https://images.pexels.com/photos/10416838/pexels-photo-10416838.jpeg?auto=compress&cs=tinysrgb&w=380&h=214&fit=crop',
+            stock: 60
         },
-        {
-            id: 11,
-            name: 'Steel Rebar 11',
-            price: 105,
-            imageUrl: 'https://via.placeholder.com/300x200?text=Product+Image'
-        },
-        {
-            id: 12,
-            name: 'Steel Rebar 12',
-            price: 105,
-            imageUrl: 'https://via.placeholder.com/300x200?text=Product+Image'
-        }
     ]
 }

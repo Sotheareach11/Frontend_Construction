@@ -18,6 +18,7 @@ interface _GlobalComponents {
     'Header': typeof import("../components/Header.vue")['default']
     'Pagination': typeof import("../components/Pagination.vue")['default']
     'ProductCard': typeof import("../components/ProductCard.vue")['default']
+    'ProductDetail': typeof import("../components/ProductDetail.vue")['default']
     'UAccordion': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Accordion.vue")['default']
     'UAlert': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Alert.vue")['default']
     'UApp': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/App.vue")['default']
@@ -106,6 +107,7 @@ interface _GlobalComponents {
     'LazyHeader': LazyComponent<typeof import("../components/Header.vue")['default']>
     'LazyPagination': LazyComponent<typeof import("../components/Pagination.vue")['default']>
     'LazyProductCard': LazyComponent<typeof import("../components/ProductCard.vue")['default']>
+    'LazyProductDetail': LazyComponent<typeof import("../components/ProductDetail.vue")['default']>
     'LazyUAccordion': LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Accordion.vue")['default']>
     'LazyUAlert': LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Alert.vue")['default']>
     'LazyUApp': LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/App.vue")['default']>
@@ -200,6 +202,7 @@ export const Footer: typeof import("../components/Footer.vue")['default']
 export const Header: typeof import("../components/Header.vue")['default']
 export const Pagination: typeof import("../components/Pagination.vue")['default']
 export const ProductCard: typeof import("../components/ProductCard.vue")['default']
+export const ProductDetail: typeof import("../components/ProductDetail.vue")['default']
 export const UAccordion: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Accordion.vue")['default']
 export const UAlert: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Alert.vue")['default']
 export const UApp: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/App.vue")['default']
@@ -288,6 +291,7 @@ export const LazyFooter: LazyComponent<typeof import("../components/Footer.vue")
 export const LazyHeader: LazyComponent<typeof import("../components/Header.vue")['default']>
 export const LazyPagination: LazyComponent<typeof import("../components/Pagination.vue")['default']>
 export const LazyProductCard: LazyComponent<typeof import("../components/ProductCard.vue")['default']>
+export const LazyProductDetail: LazyComponent<typeof import("../components/ProductDetail.vue")['default']>
 export const LazyUAccordion: LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Accordion.vue")['default']>
 export const LazyUAlert: LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Alert.vue")['default']>
 export const LazyUApp: LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/App.vue")['default']>

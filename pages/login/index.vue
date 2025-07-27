@@ -34,56 +34,68 @@
         placeholder="Enter Password"
       />
 
-      <BSDButton class="text-center justify-center flex" />
+      <BSDButton :text="'Sign In'" @click="handleSubmitLogin" />
 
       <section class="grid gap-1.5">
-        <p class="text-[#11A79F] text-lg font-bold text-center">Register</p>
-        <span
+        <NuxtLink
+          to="/register"
+          class="text-[#11A79F] text-sm font-bold text-center underline hover:text-[#74ded9cf]"
+        >
+          Register
+        </NuxtLink>
+
+        <NuxtLink
+          to="/register"
           class="text-red-700 underline text-base text-center hover:text-red-400"
         >
           Forget Password?
-        </span>
+        </NuxtLink>
       </section>
     </section>
   </div>
 </template>
 
 <script setup>
-import { z } from "zod";
+const toast = useToast();
 
-const formConfig = {
-  api: { create: "/api/create", update: "/api/update" },
-  showSubmit: true,
-  showReset: true,
-  showCancel: true,
-  width: 400,
+// Hardcoded admin credentials
+const fixedAdmin = {
+  email: "admin@gmail.com",
+  password: "admin",
 };
-
-const inputs = [
-  {
-    type: "text",
-    name: "name",
-    label: "Name",
-    required: true,
-    schema: z.string().min(3, "Name is too short"),
-  },
-  {
-    type: "email",
-    name: "email",
-    label: "Email",
-    required: true,
-    schema: z.string().email("Invalid email"),
-  },
-];
 
 const state = ref({
   email: "",
   password: "",
 });
 
-function handleSubmit() {
-  console.log("Form submitted:", state.value);
-}
-</script>
+function handleSubmitLogin() {
+  const { email, password } = state.value;
 
-<style lang="scss"></style>
+  if (email === fixedAdmin.email && password === fixedAdmin.password) {
+    toast.success({
+      title: "Login Successful",
+      description: "Welcome back",
+    });
+    navigateTo("/products/");
+  } else {
+    toast.error({
+      title: "Login Failed",
+      description: "Invalid email or password.",
+      variant: "destructive",
+    });
+  }
+}
+
+// Meta tags for SEO
+useHead({
+  title: "Login - Bak Sey Slab Daek",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Sign in to access your account and explore top-quality construction materials from Bak Sey Slab Daek.",
+    },
+  ],
+});
+</script>
