@@ -1,5 +1,5 @@
 <template>
-  <footer class="p-4 text-center">
+  <footer class="fixed-bottom p-4 text-center">
     <div class="flex justify-around flex-wrap mb-4">
       <div>
         <h3 class="font-bold text-[#11A79F]">Bak Sey Slab Daek</h3>
@@ -47,14 +47,4 @@
 
 <script setup></script>
 
-<style lang="scss" scoped>
-footer {
-  a {
-    color: #2c3e50;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-}
-</style>
+<style lang="scss" scoped></style>

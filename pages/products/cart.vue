@@ -28,7 +28,9 @@
       <div v-else class="grid lg:grid-cols-3 gap-8">
         <!-- Cart Items List -->
         <div class="lg:col-span-2">
-          <div class="bg-[#00000039] rounded-lg shadow-md overflow-hidden p-4">
+          <div
+            class="bg-[#d6d6d663] dark:bg-[#00000039] rounded-lg shadow-md overflow-hidden p-4"
+          >
             <div class="p-4 border-b">
               <h2 class="text-lg font-semibold">
                 Cart Items ({{ cartStore.cartCount }})
@@ -104,7 +106,9 @@
 
         <!-- Order Summary -->
         <div class="lg:col-span-1">
-          <div class="bg-[#00000039] rounded-lg shadow-md p-6 sticky top-4">
+          <div
+            class="bg-[#d6d6d663] dark:bg-[#00000039] rounded-lg shadow-md p-6 sticky top-4"
+          >
             <h2 class="text-lg font-semibold mb-4">Order Summary</h2>
 
             <!-- <div class="space-y-3 mb-4">
@@ -131,7 +135,7 @@
 
             <div class="space-y-3">
               <button
-                class="w-full bg-[#11A79F] text-white py-3 rounded-lg hover:bg-[#0e8a82] transition-colors font-semibold"
+                class="w-full cursor-pointer bg-[#11A79F] text-white py-3 rounded-lg hover:bg-[#0e8a82] transition-colors font-semibold"
                 @click="proceedToCheckout"
               >
                 Proceed to Checkout
@@ -139,14 +143,14 @@
 
               <button
                 @click="clearCart"
-                class="w-full border border-red-500 text-red-500 py-3 rounded-lg hover:bg-red-50 transition-colors"
+                class="w-full cursor-pointer border border-red-500 text-red-500 py-3 rounded-lg hover:bg-[#ffffff5d] transition-colors"
               >
                 Clear Cart
               </button>
 
               <NuxtLink
                 to="/products"
-                class="block w-full text-center text-[#11A79F] py-2 hover:underline"
+                class="block cursor-pointer w-full text-center text-[#11A79F] py-2 hover:underline"
               >
                 Continue Shopping
               </NuxtLink>
@@ -189,7 +193,7 @@ const clearCart = () => {
 
 const proceedToCheckout = () => {
   // Navigate to checkout page
-  navigateTo("/checkout");
+  navigateTo("/products/checkout");
 };
 
 // Meta tags for SEO

@@ -14,8 +14,10 @@ type LazyComponent<T> = (T & DefineComponent<HydrationStrategies, {}, {}, {}, {}
 interface _GlobalComponents {
       'BSDButton': typeof import("../components/BSDButton.vue")['default']
     'BSDInput': typeof import("../components/BSDInput.vue")['default']
+    'ColorModeToggle': typeof import("../components/ColorModeToggle.vue")['default']
     'Footer': typeof import("../components/Footer.vue")['default']
     'Header': typeof import("../components/Header.vue")['default']
+    'Invoice': typeof import("../components/Invoice.vue")['default']
     'Pagination': typeof import("../components/Pagination.vue")['default']
     'ProductCard': typeof import("../components/ProductCard.vue")['default']
     'ProductDetail': typeof import("../components/ProductDetail.vue")['default']
@@ -103,8 +105,10 @@ interface _GlobalComponents {
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
       'LazyBSDButton': LazyComponent<typeof import("../components/BSDButton.vue")['default']>
     'LazyBSDInput': LazyComponent<typeof import("../components/BSDInput.vue")['default']>
+    'LazyColorModeToggle': LazyComponent<typeof import("../components/ColorModeToggle.vue")['default']>
     'LazyFooter': LazyComponent<typeof import("../components/Footer.vue")['default']>
     'LazyHeader': LazyComponent<typeof import("../components/Header.vue")['default']>
+    'LazyInvoice': LazyComponent<typeof import("../components/Invoice.vue")['default']>
     'LazyPagination': LazyComponent<typeof import("../components/Pagination.vue")['default']>
     'LazyProductCard': LazyComponent<typeof import("../components/ProductCard.vue")['default']>
     'LazyProductDetail': LazyComponent<typeof import("../components/ProductDetail.vue")['default']>
@@ -198,8 +202,10 @@ declare module 'vue' {
 
 export const BSDButton: typeof import("../components/BSDButton.vue")['default']
 export const BSDInput: typeof import("../components/BSDInput.vue")['default']
+export const ColorModeToggle: typeof import("../components/ColorModeToggle.vue")['default']
 export const Footer: typeof import("../components/Footer.vue")['default']
 export const Header: typeof import("../components/Header.vue")['default']
+export const Invoice: typeof import("../components/Invoice.vue")['default']
 export const Pagination: typeof import("../components/Pagination.vue")['default']
 export const ProductCard: typeof import("../components/ProductCard.vue")['default']
 export const ProductDetail: typeof import("../components/ProductDetail.vue")['default']
@@ -287,8 +293,10 @@ export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const LazyBSDButton: LazyComponent<typeof import("../components/BSDButton.vue")['default']>
 export const LazyBSDInput: LazyComponent<typeof import("../components/BSDInput.vue")['default']>
+export const LazyColorModeToggle: LazyComponent<typeof import("../components/ColorModeToggle.vue")['default']>
 export const LazyFooter: LazyComponent<typeof import("../components/Footer.vue")['default']>
 export const LazyHeader: LazyComponent<typeof import("../components/Header.vue")['default']>
+export const LazyInvoice: LazyComponent<typeof import("../components/Invoice.vue")['default']>
 export const LazyPagination: LazyComponent<typeof import("../components/Pagination.vue")['default']>
 export const LazyProductCard: LazyComponent<typeof import("../components/ProductCard.vue")['default']>
 export const LazyProductDetail: LazyComponent<typeof import("../components/ProductDetail.vue")['default']>

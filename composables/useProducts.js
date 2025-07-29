@@ -12,7 +12,7 @@ export const useProducts = () => {
             sku: 'RB001-HD',
             category: 'Rebar',
             tags: ['Steel', 'Construction', 'Durable', 'Structural'],
-            imageUrl: 'https://images.pexels.com/photos/10309275/pexels-photo-10309275.jpeg?auto=compress&cs=tinysrgb&w=380&h=214&fit=crop',
+            imageUrl: 'https://onestopoutdoor.com/cdn/shop/files/Screenshot2023-10-31at12.16.05PM_5796b4c4-e855-4cf0-863c-27cd3f3e6bbf_x700.png?v=1738375550',
             stock: 50
         },
         {
@@ -27,7 +27,7 @@ export const useProducts = () => {
             sku: 'CM001-500',
             category: 'Equipment',
             tags: ['Concrete', 'Mixer', 'Construction', 'Portable'],
-            imageUrl: '',
+            imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH7WWLdFtDORyrSDmk-66-Et9GVV-QUikxRg&s',
             stock: 10
         },
         {
@@ -42,7 +42,7 @@ export const useProducts = () => {
             sku: 'SC001-GS',
             category: 'Scaffolding',
             tags: ['Scaffolding', 'Steel', 'Safety', 'Construction'],
-            imageUrl: 'https://images.pexels.com/photos/10416837/pexels-photo-10416837.jpeg?auto=compress&cs=tinysrgb&w=380&h=214&fit=crop',
+            imageUrl: 'https://5.imimg.com/data5/RS/VJ/MY-38398126/3d-model-steel-scaffolding-500x500.jpg',
             stock: 30
         },
         {
@@ -57,7 +57,7 @@ export const useProducts = () => {
             sku: 'SH001-HI',
             category: 'Safety Gear',
             tags: ['Safety', 'Helmet', 'Construction', 'Protective'],
-            imageUrl: 'https://images.pexels.com/photos/21301673/pexels-photo-21301673.jpeg?auto=compress&cs=tinysrgb&w=380&h=214&fit=crop',
+            imageUrl: 'https://i.ebayimg.com/images/g/MZAAAOSw0Dpkkq1F/s-l1200.jpg',
             stock: 100
         },
         {
@@ -72,7 +72,7 @@ export const useProducts = () => {
             sku: 'CB001-RC',
             category: 'Building Materials',
             tags: ['Concrete', 'Blocks', 'Construction', 'Foundation'],
-            imageUrl: 'https://images.pexels.com/photos/17219264/pexels-photo-17219264.jpeg?auto=compress&cs=tinysrgb&w=380&h=214&fit=crop',
+            imageUrl: 'https://img.archiexpo.com/images_ae/photo-g/103640-12478590.jpg',
             stock: 200
         },
         {
@@ -87,7 +87,7 @@ export const useProducts = () => {
             sku: 'IB001-HD',
             category: 'Structural Steel',
             tags: ['Steel', 'I-Beam', 'Construction', 'Support'],
-            imageUrl: 'https://images.pexels.com/photos/10416836/pexels-photo-10416836.jpeg?auto=compress&cs=tinysrgb&w=380&h=214&fit=crop',
+            imageUrl: 'https://yenaengineering.nl/wp-content/uploads/2022/05/image-18.png',
             stock: 25
         },
         {
@@ -102,7 +102,7 @@ export const useProducts = () => {
             sku: 'WM001-P',
             category: 'Tools',
             tags: ['Welding', 'Portable', 'Construction', 'Steel'],
-            imageUrl: 'https://images.pexels.com/photos/159154/pexels-photo-159154.jpeg?auto=compress&cs=tinysrgb&w=380&h=214&fit=crop',
+            imageUrl: 'https://5.imimg.com/data5/AP/HY/MY-4381880/portable-welding-machine.jpg',
             stock: 15
         },
         {
@@ -117,7 +117,7 @@ export const useProducts = () => {
             sku: 'PL001-CG',
             category: 'Building Materials',
             tags: ['Plywood', 'Construction', 'Formwork', 'Durable'],
-            imageUrl: 'https://images.pexels.com/photos/162808/pexels-photo-162808.jpeg?auto=compress&cs=tinysrgb&w=380&h=214&fit=crop',
+            imageUrl: 'https://5.imimg.com/data5/TQ/XU/MY-34161188/commercial-plywood-500x500.jpg',
             stock: 80
         },
         {
@@ -132,7 +132,7 @@ export const useProducts = () => {
             sku: 'CP001-HP',
             category: 'Equipment',
             tags: ['Concrete', 'Pump', 'Construction', 'Heavy Duty'],
-            imageUrl: 'https://images.pexels.com/photos/10416835/pexels-photo-10416835.jpeg?auto=compress&cs=tinysrgb&w=380&h=214&fit=crop',
+            imageUrl: 'https://image.made-in-china.com/2f0j00YRVovaHMskzh/High-Performance-Concrete-Machinery-Hbt10020V-100m3-H-7-4ton-Hydraulic-Trailer-Concrete-Pump-for-Sale.webp',
             stock: 5
         },
         {
@@ -147,8 +147,158 @@ export const useProducts = () => {
             sku: 'RM001-SM',
             category: 'Rebar',
             tags: ['Steel', 'Mesh', 'Construction', 'Reinforcement'],
-            imageUrl: 'https://images.pexels.com/photos/10416838/pexels-photo-10416838.jpeg?auto=compress&cs=tinysrgb&w=380&h=214&fit=crop',
+            imageUrl: 'https://5.imimg.com/data5/SELLER/Default/2024/2/391484233/KA/VQ/XF/2905337/reinforcement-mesh.jpg',
             stock: 60
         },
+        {
+            id: 11,
+            name: 'Cordless Power Drill',
+            price: 150,
+            rating: 4.7,
+            reviews: 50,
+            shortDescription: 'Versatile cordless drill for construction tasks.',
+            longDescription: 'High-torque, battery-powered drill for drilling and fastening in various materials.',
+            sizes: ['One Size'],
+            sku: 'PD001-CD',
+            category: 'Tools',
+            tags: ['Drill', 'Cordless', 'Construction', 'Power Tool'],
+            imageUrl: 'https://m.media-amazon.com/images/I/71ZHD9GLMTL._AC_SL1500_.jpg',
+            stock: 40
+        },
+        {
+            id: 12,
+            name: 'Industrial Wheelbarrow',
+            price: 90,
+            rating: 4.5,
+            reviews: 32,
+            shortDescription: 'Heavy-duty wheelbarrow for material transport.',
+            longDescription: 'Designed for rugged construction sites, with a large capacity for hauling debris and materials.',
+            sizes: ['6 cu ft', '8 cu ft'],
+            sku: 'WB001-HD',
+            category: 'Equipment',
+            tags: ['Wheelbarrow', 'Construction', 'Transport', 'Heavy Duty'],
+            imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJBwWnJeOKJf0Mp8VoYYI6usx9yprICOMnSA&s',
+            stock: 20
+        },
+        {
+            id: 13,
+            name: 'Safety Harness Kit',
+            price: 70,
+            rating: 4.8,
+            reviews: 48,
+            shortDescription: 'Full-body safety harness for high-altitude work.',
+            longDescription: 'Ensures worker safety with adjustable straps and durable connectors for elevated tasks.',
+            sizes: ['S/M', 'L/XL'],
+            sku: 'SH002-HK',
+            category: 'Safety Gear',
+            tags: ['Safety', 'Harness', 'Construction', 'Height Safety'],
+            imageUrl: 'https://m.media-amazon.com/images/I/81QgUXgRLtL._UY1000_.jpg',
+            stock: 75
+        },
+        {
+            id: 14,
+            name: 'Concrete Vibrator',
+            price: 250,
+            rating: 4.6,
+            reviews: 29,
+            shortDescription: 'Portable vibrator for concrete consolidation.',
+            longDescription: 'Ensures uniform concrete setting by removing air bubbles, ideal for foundations and slabs.',
+            sizes: ['One Size'],
+            sku: 'CV001-P',
+            category: 'Tools',
+            tags: ['Concrete', 'Vibrator', 'Construction', 'Compaction'],
+            imageUrl: 'https://m.media-amazon.com/images/I/712VbuqP7zL.jpg',
+            stock: 15
+        },
+        {
+            id: 15,
+            name: 'Steel Trowel Set',
+            price: 35,
+            rating: 4.4,
+            reviews: 26,
+            shortDescription: 'Durable trowel set for masonry work.',
+            longDescription: 'High-quality steel trowels for smooth concrete and plaster finishing.',
+            sizes: ['Small', 'Medium', 'Large'],
+            sku: 'TR001-ST',
+            category: 'Tools',
+            tags: ['Trowel', 'Masonry', 'Construction', 'Finishing'],
+            imageUrl: 'https://m.media-amazon.com/images/I/61gc361vQ6L._UF1000,1000_QL80_.jpg',
+            stock: 60
+        },
+        {
+            id: 16,
+            name: 'Insulated Work Gloves',
+            price: 20,
+            rating: 4.7,
+            reviews: 55,
+            shortDescription: 'Protective gloves for construction tasks.',
+            longDescription: 'Durable, insulated gloves offering grip and protection for handling rough materials.',
+            sizes: ['M', 'L', 'XL'],
+            sku: 'GL001-IW',
+            category: 'Safety Gear',
+            tags: ['Gloves', 'Safety', 'Construction', 'Protective'],
+            imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ztKs3sJtuD8Jced2cnfL5tqOW-I_k6Jc7g&s',
+            stock: 120
+        },
+        {
+            id: 17,
+            name: 'Portable Generator 5000W',
+            price: 600,
+            rating: 4.8,
+            reviews: 41,
+            shortDescription: 'Powerful generator for construction sites.',
+            longDescription: 'Reliable 5000W generator for powering tools and equipment in remote locations.',
+            sizes: ['One Size'],
+            sku: 'PG001-5K',
+            category: 'Equipment',
+            tags: ['Generator', 'Power', 'Construction', 'Portable'],
+            imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRqO3UYRvWoMkQY3yURjFnGiLEW_xv3Mp5Uw&s',
+            stock: 8
+        },
+        {
+            id: 18,
+            name: 'Cement Mixer Drum',
+            price: 300,
+            rating: 4.5,
+            reviews: 33,
+            shortDescription: 'Replacement drum for cement mixers.',
+            longDescription: 'Heavy-duty steel drum compatible with standard cement mixers for efficient mixing.',
+            sizes: ['400L', '600L'],
+            sku: 'CD001-HD',
+            category: 'Equipment',
+            tags: ['Cement', 'Mixer', 'Construction', 'Drum'],
+            imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAFha96eWnnFcuazUEt2pyhjMKfDuG8jkRQg&s',
+            stock: 12
+        },
+        {
+            id: 19,
+            name: 'Steel Cable Winch',
+            price: 180,
+            rating: 4.6,
+            reviews: 37,
+            shortDescription: 'Heavy-duty winch for lifting materials.',
+            longDescription: 'Robust steel cable winch for hoisting heavy construction materials safely.',
+            sizes: ['One Size'],
+            sku: 'CW001-HD',
+            category: 'Tools',
+            tags: ['Winch', 'Lifting', 'Construction', 'Steel'],
+            imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO1HAQ1mdX535aVQaqOErBUM3wTcfIQWb0Sg&s',
+            stock: 25
+        },
+        {
+            id: 20,
+            name: 'Construction Barrier Fence',
+            price: 50,
+            rating: 4.4,
+            reviews: 28,
+            shortDescription: 'Durable fencing for site safety.',
+            longDescription: 'High-visibility, weather-resistant barrier fencing for securing construction perimeters.',
+            sizes: ['50m', '100m'],
+            sku: 'BF001-HV',
+            category: 'Safety Gear',
+            tags: ['Fencing', 'Safety', 'Construction', 'Barrier'],
+            imageUrl: 'https://www.jaybro.com.au/pub/Concrete Mixer 500Lmedia/mageplaza/blog/post/0/1/01-2700-edited.jpg',
+            stock: 90
+        }
     ]
 }

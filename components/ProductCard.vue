@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group relative rounded-lg bg-gray-800 text-white overflow-hidden transition-all duration-300 hover:shadow-lg hover:scale-105"
+    class="group relative rounded-lg bg-[#F4F5F7] dark:bg-gray-800 text-white overflow-hidden transition-all duration-300 hover:shadow-lg hover:scale-105"
   >
     <div class="relative overflow-hidden rounded-t-lg">
       <img
@@ -16,7 +16,7 @@
 
     <div class="p-2 relative z-10">
       <h3
-        class="font-medium group-hover:text-teal-300 transition-colors duration-300"
+        class="text-[#3A3A3A] dark:text-white font-medium group-hover:text-teal-300 transition-colors duration-300"
       >
         {{ product.name }}
       </h3>
