@@ -16,8 +16,6 @@
 
 <script setup>
 import { useRoute } from "vue-router";
-import { useProducts } from "~/composables/useProducts";
-import { useCartStore } from "~/composables/useCart";
 
 const cartStore = useCartStore();
 const route = useRoute();

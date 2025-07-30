@@ -15,7 +15,6 @@
 </template>
 
 <script setup>
-import Invoice from "~/components/Invoice.vue";
 const openDialog = ref(false);
 
 function ClickInvoice() {

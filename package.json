@@ -1,5 +1,5 @@
 {
-  "name": "Tamab_Construction",
+  "name": "tamab_construction",
   "private": true,
   "type": "module",
   "scripts": {
@@ -20,5 +20,18 @@
   },
   "devDependencies": {
     "sass-embedded": "^1.89.2"
-  }
+  },
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sotheareach11/Frontend_Construction.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sotheareach11/Frontend_Construction/issues"
+  },
+  "homepage": "https://github.com/Sotheareach11/Frontend_Construction#readme",
+  "description": ""
 }

@@ -130,8 +130,6 @@
 </template>
 
 <script setup>
-import ProductCard from "~/components/ProductCard.vue";
-import Pagination from "~/components/Pagination.vue";
 import { useProducts } from "~/composables/useProducts";
 import { useCartStore } from "~/composables/useCart";
 
