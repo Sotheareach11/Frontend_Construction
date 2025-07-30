@@ -3,23 +3,28 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
     "dev": "nuxt dev",
+    "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@iconify/utils": "^2.3.0",
+    "@nuxt/icon": "^1.15.0",
     "@nuxt/ui": "^3.1.0",
+    "@nuxtjs/toast": "^3.3.1",
+    "@vue/shared": "^3.5.18",
+    "@vueuse/core": "^13.6.0",
     "izitoast": "^1.4.0",
-    "nuxt": "^3.16.2",
-    "nuxt-toast": "^1.1.4",
+    "nuxt": "^3.7.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0",
     "zod": "^3.25.67"
   },
   "devDependencies": {
-    "sass-embedded": "^1.89.2"
+    "sass-embedded": "^1.89.2",
+    "vite-plugin-node-polyfills": "^0.24.0"
   },
   "version": "1.0.0",
   "main": "tailwind.config.js",
