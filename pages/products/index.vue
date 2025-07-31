@@ -47,7 +47,7 @@
             <img
               :src="item.image"
               alt="Hardware"
-              class="w-full h-[200px] sm:h-[200px] md:h-[300px] object-fill rounded-[16px]"
+              class="w-full h-[200px] sm:h-[200px] md:h-[300px] object-cover rounded-[16px]"
             />
             <div class="p-1 text-center font-semibold text-sm sm:text-base">
               {{ item.title }}
@@ -185,7 +185,7 @@ function addProduct(product) {
     // If product exists, increase quantity
     cartStore.updateQuantity(product.id, existingItem.quantity + 1);
     showToastNotification(
-      `Increased ${product.name} quantity to ${existingItem.quantity + 1}`
+      `Increased ${product.name} quantity to ${existingItem.quantity}`
     );
   } else {
     // If product doesn't exist, add it to cart

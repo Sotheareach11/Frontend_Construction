@@ -54,11 +54,21 @@
 
                 <!-- Product Info -->
                 <div class="flex-grow">
-                  <h3 class="font-semibold text-lg">{{ item?.name }}</h3>
-                  <p class="text-gray-600">
+                  <h3
+                    class="font-semibold text-[12px] sm:text-[12px] md:text-[18px]"
+                  >
+                    {{ item?.name }}
+                  </h3>
+
+                  <p
+                    class="text-gray-600 text-[10px] sm:text-[12px] md:text-[14px]"
+                  >
                     {{ item?.description || "Construction Material" }}
                   </p>
-                  <p class="text-[#11A79F] font-bold text-xl">
+
+                  <p
+                    class="text-[#11A79F] font-bold text-[10px] sm:text-[14px] md:text-[16px]"
+                  >
                     ${{ item?.price }}
                   </p>
                 </div>
@@ -68,19 +78,20 @@
                   <div class="flex items-center border rounded-lg">
                     <button
                       @click="updateQuantity(item?.id, item?.quantity - 1)"
-                      class="px-3 py-2 text-gray-600 hover:bg-gray-100 transition-colors"
+                      class="px-1 py-1 sm:px-2 sm:py-2 md:px-3 md:py-2 text-gray-600 transition-colors cursor-pointer"
                       :disabled="item?.quantity <= 1"
                     >
-                      <i class="fas fa-minus"></i>
+                      <i class="fas fa-minus text-[14px]"></i>
                     </button>
-                    <span class="px-4 py-2 border-x min-w-[3rem] text-center">{{
-                      item?.quantity
-                    }}</span>
+                    <span
+                      class="px-1 py-1 sm:px-2 sm:py-2 md:px-3 md:py-2 border-x min-w-[3rem] text-center"
+                      >{{ item?.quantity }}</span
+                    >
                     <button
                       @click="updateQuantity(item?.id, item?.quantity + 1)"
-                      class="px-3 py-2 text-gray-600 hover:bg-gray-100 transition-colors"
+                      class="px-1 py-1 sm:px-2 sm:py-2 md:px-3 md:py-2 text-gray-600 transition-colors cursor-pointer"
                     >
-                      <i class="fas fa-plus"></i>
+                      <i class="fas fa-plus text-[14px]"></i>
                     </button>
                   </div>
 
@@ -135,7 +146,12 @@
 
             <div class="space-y-3">
               <button
-                class="w-full cursor-pointer bg-[#11A79F] text-white py-3 rounded-lg hover:bg-[#0e8a82] transition-colors font-semibold"
+                :class="[
+                  dataStore.length === 0
+                    ? 'cursor-not-allowed pointer-events-none bg-[#11a7a069]'
+                    : 'cursor-pointer bg-[#11A79F]',
+                  'w-full text-white py-3 rounded-lg hover:bg-[#0e8a82] transition-colors font-semibold',
+                ]"
                 @click="proceedToCheckout"
               >
                 Proceed to Checkout

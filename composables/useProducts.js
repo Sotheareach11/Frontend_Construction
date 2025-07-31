@@ -297,7 +297,7 @@ export const useProducts = () => {
             sku: 'BF001-HV',
             category: 'Safety Gear',
             tags: ['Fencing', 'Safety', 'Construction', 'Barrier'],
-            imageUrl: 'https://www.jaybro.com.au/pub/Concrete Mixer 500Lmedia/mageplaza/blog/post/0/1/01-2700-edited.jpg',
+            imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfwS6uzCZ3VL4zV_CRcwd0gGCGB2NnOcn3DQ&s',
             stock: 90
         }
     ]

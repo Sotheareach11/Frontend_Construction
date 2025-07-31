@@ -81,6 +81,7 @@
             <button class="px-3 cursor-pointer" @click="quantity++">+</button>
           </div>
           <UButton
+            @click="addProduct"
             class="bg-[#11A79F] hover:bg-[#11A79F] cursor-pointer text-white px-5 py-2 rounded-[14px] font-semibold"
           >
             Add To Cart
@@ -115,12 +116,57 @@
         {{ product.longDescription }}
       </p>
     </div>
+
+    <!-- Toast notification for cart actions -->
+    <div
+      v-if="showToast"
+      class="fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 transition-opacity duration-300"
+    >
+      <div class="flex items-center gap-2">
+        <i class="fas fa-check-circle"></i>
+        <span>{{ toastMessage }}</span>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
 import fallbackImage from "@/assets/img/logo.png";
+import { useCartStore } from "~/composables/useCart";
 defineProps(["product"]);
 const quantity = ref(1);
 const selectedSize = ref("S");
+const toastMessage = ref("");
+
+const cartStore = useCartStore();
+const showToast = ref(false);
+
+// ✅ Add to cart function
+function addProduct(product) {
+  const existingItem = cartStore.items.value.find(
+    (item) => item.id === product.id
+  );
+
+  if (existingItem) {
+    // If product exists, increase quantity
+    cartStore.updateQuantity(product.id, existingItem.quantity + 1);
+    showToastNotification(
+      `Increased ${product.name} quantity to ${existingItem.quantity}`
+    );
+  } else {
+    // If product doesn't exist, add it to cart
+    cartStore.addToCart(product);
+    showToastNotification(`${product.name} added to cart!`);
+  }
+}
+
+function showToastNotification(message) {
+  toastMessage.value = message;
+  showToast.value = true;
+
+  // Hide toast after 3 seconds
+  setTimeout(() => {
+    showToast.value = false;
+  }, 3000);
+}
 </script>
